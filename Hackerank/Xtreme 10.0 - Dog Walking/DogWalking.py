@@ -17,6 +17,6 @@ for _ in range(t):
         ranges.append(dogs[i]-dogs[i-1])
     ranges.sort()
     max_range=dogs[-1]-dogs[0]
-    #we'll put the highest dogs with single dogwalker so the range will be 0
+    #we'll put the highest dogs with single dogwalker so the range will be 
     high=sum(ranges[-(K-1):]) #say we have 4 dog-walkers. 3 with single dog. 1 with the rest
     print(max_range-high)
